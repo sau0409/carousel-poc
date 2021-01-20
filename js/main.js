@@ -19,6 +19,9 @@ btnRight.addEventListener("click", () => {
     currentImageIndex = 1;
     allBox[0].scrollIntoView({ behavior: "smooth" });
   }
+  if (currentImageIndex === 1) {
+    btnLeft.setAttribute("style", "display: none");
+  }
 });
 
 btnLeft.addEventListener("click", () => {
