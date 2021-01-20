@@ -9,7 +9,10 @@ body {
 }
 
 /* style for carousel images*/
+
+/* placing carousel in center*/
 .carousel {
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
