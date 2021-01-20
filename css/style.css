@@ -8,12 +8,7 @@ body {
     padding: 1rem;
 }
 
-h1 {
-    text-align: center;
-    color: darkolivegreen;
-    font-size: 3rem;
-}
-
+/* style for carousel images*/
 .carousel {
     display: flex;
     justify-content: center;
@@ -42,23 +37,21 @@ img {
     height: 100%;
 }
 
+
+/* style for buttons*/
 .btn--left {
-    position: absolute;
-    top: 50%;
     left: 2vw;
-    transform: translateY(-50%);
-    z-index: 1000;
 }
 
 .btn--right {
-    position: absolute;
-    top: 50%;
     right: 2vw;
-    transform: translateY(-50%);
-    z-index: 1000;
 }
 
 .btn--left, .btn--right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
     font-size: 4rem;
     cursor: pointer;
 }
@@ -75,6 +68,8 @@ button:hover, button:active {
     color: teal;
 }
 
+/* horizontal scroll in device having width less than 500px
+and no buttons*/
 @media (max-width: 500px) {
 
     .carousel__container {
